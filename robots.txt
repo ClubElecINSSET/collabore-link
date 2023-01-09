@@ -1,0 +1,3 @@
+Sitemap: https://link.collabore.fr/sitemap.xml
+User-agent: *
+Disallow: /assets/
