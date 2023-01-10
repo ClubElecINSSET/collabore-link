@@ -53,7 +53,7 @@ if (
     $req->execute([$argument]);
     $row = $req->fetch();
     if (isset($row["id"])) {
-        $deletionId = $row["deletionId"];
+        $deletionId = $row["deleteId"];
         $origin = $row["original"];
         include_once $_SERVER["DOCUMENT_ROOT"] . "/assets/includes/header.php";
         $to_email = "abuse@$url";
