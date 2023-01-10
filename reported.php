@@ -59,7 +59,7 @@ if (
         $to_email = "abuse@$url";
         $subject = "Report of a link from $name ($argument → $origin)";
         $message = "Hello,\n\nThe shortened link https://$url/$argument was reported by a user of the $name link shortener.\nIt targets the link $origin.\nIts deletion link is https://$url/d/$deletionId.\nPlease check whether or not this link complies with $name's terms of use.\n\nCordially,\nThe $name reporting page.";
-        $headers = "From: noreply@$url\n";
+        $headers = "From: no-reply@$url\n";
         $headers .= "Content-type: text/plain; charset=utf-8\n";
         mail($to_email, $subject, $message, $headers);
         $pagename = "Report sent";
