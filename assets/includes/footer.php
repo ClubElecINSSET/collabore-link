@@ -1,5 +1,4 @@
 <?php
-//Si ouvert depuis le navigateur, redirection vers la page d"accueil
 if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
     http_response_code(301);
     header("Location: /");
@@ -13,10 +12,10 @@ if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
       <a href="https://forge.collabore.fr/ClubElecINSSET/collabore-link"><?php $translate->__("Source code"); ?>
       </a>
       <br> 
-      <a href="https://collabore.fr/legals.html"><?php $translate->__("Legal notice"); ?>
+      <a href="https://collabore.fr/legals"><?php $translate->__("Legal notice"); ?>
       </a> 
       • 
-      <a href="https://collabore.fr/terms.html"><?php $translate->__("Terms of service"); ?>
+      <a href="https://collabore.fr/terms"><?php $translate->__("Terms of service"); ?>
       </a>
     </p>
 </footer>
