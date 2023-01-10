@@ -1,5 +1,4 @@
 <?php
-//Si ouvert depuis le navigateur, redirection vers la page d"accueil
 if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 	http_response_code(301);
 	header("Location: /");
