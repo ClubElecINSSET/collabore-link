@@ -30,19 +30,19 @@ body {
     display: flex;
 }
 
+.top-border {
+    position: absolute;
+    border-top: 6px solid #1e1f1d;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
 .top-logo {
     position: absolute;
     top: 0;
-    left: 0;
-    border: 0;
-    width: 180px;
-    transition: left .1s ease-in-out, opacity .1s ease-in-out;
-    z-index: 999;
-    opacity: .8
-}
-
-.top-logo:hover {
-    opacity: 1
+    left: 5rem;
+    height: 50px;
 }
 
 .logo {
@@ -88,6 +88,12 @@ body {
 @media (max-width:500px) {
     .masthead {
         margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .top-logo {
+        left: 1rem;
     }
 }
 
@@ -357,6 +363,11 @@ a:hover {
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #1e1f1d;
+    }
+
+    .top-border {
+        border-top: 7px solid #e1e0e2;
+
     }
 
     .top-logo {
