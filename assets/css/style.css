@@ -26,7 +26,6 @@ body {
     height: 100%;
     text-rendering: optimizeLegibility;
     background-color: #e1e0e2;
-    overflow-x: hidden;
     display: flex;
 }
 
